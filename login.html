@@ -1,0 +1,93 @@
+<html>
+<head>
+
+<style>
+
+body{
+background:url(background.jpg);
+text-align:center;
+background-size:cover;
+margin:0;
+}
+input{
+width:70%;
+outline:none;
+padding:10px 11px;
+border:1px #aaa solid;
+font-size:15px;
+background:#fff;
+display:block:
+margin:20px auto;
+}
+#login{
+background:00FF00;
+color:black;
+border:none;
+}
+div{
+width:30%;
+height:400px;
+background:rgba(0,0,0,.2);
+box-shadow:5px 4px 43px #000;
+position:absolute;
+top:80px;
+left:200px;
+}
+form{
+margin-top:30px;
+text-align:center;
+}
+b{
+font-size:25px;
+color:#fff;
+}
+a{
+color:#fff;
+}
+img{
+display:block;
+border-radius:50%;
+margin:-150px auto 0 auto;
+}
+#page-wrap{
+position:absolute;
+text-align:center;
+width:800px;
+margin-left:-400px;
+}
+
+</style>
+</head>
+
+
+<body background="background.jpg">
+<div class="page-wrap">
+
+<form name="login">
+<img src="admin.png" alt="avatar"/>
+<b color="black">Admin Login</b><br></br>
+<input type="user" name="username" value="" placeholder="username or email" id=""/><br><br>
+<input type="password" name="password" value="" placeholder="password" id=""/><br><br>
+<input type="button" name="Login"  placeholder="LOGIN" id="login" color="green" onclick="check
+(this.form)"value="Login"/><br><br>
+
+</form>
+</div>
+<script language="javascript">
+function check(form)
+{
+if(form.username.value =="admin" && form.password.value =="admin123")
+{
+window.open('1.html')
+}
+else
+{
+alert("error password or username")
+}
+}
+
+</script>
+</body>
+
+
+</html>
